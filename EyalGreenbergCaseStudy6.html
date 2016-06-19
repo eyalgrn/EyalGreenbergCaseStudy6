@@ -123,6 +123,8 @@ $(document).ready(function () {
 </div>
 
 
+<div id="introduction" class="section level4">
+<h4>Introduction</h4>
 <div id="we-have-been-given-two-sources-of-information-both-from-the-world-bank-archive" class="section level5">
 <h5>We have been given two sources of information, both from the World Bank Archive:</h5>
 </div>
@@ -182,6 +184,7 @@ GDPData3$GDPUSDMillions = as.numeric(GDPData3$GDPUSDMillions)
 
 ### Merge the two files
 MergedData &lt;- merge(x = GDPData3, y = EDUCData, by = &quot;CountryCode&quot;, all = TRUE)</code></pre>
+</div>
 </div>
 <div id="question-1-match-the-data-based-on-the-country-shortcode.-how-many-of-the-ids-match" class="section level4">
 <h4>Question 1: Match the data based on the country shortcode. How many of the IDs match?</h4>
@@ -412,20 +415,20 @@ q5 &lt;- subset(MergedDataSorted, Ranking &gt; 152 &amp; Ranking &lt;= 190)
 sum(q1$Income.Group == &quot;Lower middle income&quot;)</code></pre>
 <pre><code>## [1] 5</code></pre>
 </div>
-<div id="conclusion" class="section level4">
-<h4>Conclusion</h4>
+<div id="summary-and-conclusion" class="section level4">
+<h4>Summary and conclusion</h4>
+<div id="we-have-found-that-there-are-three-countries-with-gdp-significantly-larger-than-the-rest-of-the-world---usa-china-and-japan" class="section level5">
+<h5>1. We have found that there are three countries with GDP significantly larger than the rest of the world - USA, China and Japan;</h5>
 </div>
-<div id="we-have-found-that-there-are-three-countries-with-gdp-significantly-larger-than-the-rest-of-the-world---usa-china-and-japan" class="section level4">
-<h4>1. We have found that there are three countries with GDP significantly larger than the rest of the world - USA, China and Japan;</h4>
+<div id="we-can-see-that-usa-and-japan-are-in-the-high-income-oecd-group-while-china-is-in-the-lower-middle-income-group" class="section level5">
+<h5>2. We can see that USA and Japan are in the “High Income: OECD” group, while china is in the “Lower Middle Income” group;</h5>
 </div>
-<div id="we-can-see-that-usa-and-japan-are-in-the-high-income-oecd-group-while-china-is-in-the-lower-middle-income-group" class="section level4">
-<h4>2. We can see that USA and Japan are in the “High Income: OECD” group, while china is in the “Lower Middle Income” group;</h4>
+<div id="low-income-group-contains-countries-with-very-low-gdp-but-high-income-non-oecd-group---as-well.-this-is-compared-to-high-income-oecd-and-upper-middle-income---these-two-groups-have-more-variety-of-gdp-in-it-including-countries-with-high-gdp" class="section level5">
+<h5>3. “Low Income” group contains countries with very low GDP, but “High Income Non OECD” group - as well. This is compared to “High Income OECD” and “Upper Middle Income” - these two groups have more variety of GDP in it, including countries with high GDP;</h5>
 </div>
-<div id="low-income-group-contains-countries-with-very-low-gdp-but-high-income-non-oecd-group---as-well.-this-is-compared-to-high-income-oecd-and-upper-middle-income---these-two-groups-have-more-variety-of-gdp-in-it-including-countries-with-high-gdp" class="section level4">
-<h4>3. “Low Income” group contains countries with very low GDP, but “High Income Non OECD” group - as well. This is compared to “High Income OECD” and “Upper Middle Income” - these two groups have more variety of GDP in it, including countries with high GDP;</h4>
+<div id="finally-we-can-see-that-out-of-38-countries-the-upper-quantile-in-terms-of-gdp-ranking-only-5-countries-are-in-the-lower-middle-income." class="section level5">
+<h5>4. Finally, we can see that out of 38 countries, the upper quantile in terms of GDP ranking, only 5 countries are in the “Lower Middle Income”.</h5>
 </div>
-<div id="finally-we-can-see-that-out-of-38-countries-the-upper-quantile-in-terms-of-gdp-ranking-only-5-countries-are-in-the-lower-middle-income." class="section level4">
-<h4>4. Finally, we can see that out of 38 countries, the upper quantile in terms of GDP ranking, only 5 countries are in the “Lower Middle Income”.</h4>
 </div>
 
 

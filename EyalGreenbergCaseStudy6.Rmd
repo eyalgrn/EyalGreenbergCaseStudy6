@@ -4,7 +4,7 @@ author: "Eyal Greenberg"
 date: "June 19, 2016"
 output: html_document
 ---
-
+#### Introduction
 ##### We have been given two sources of information, both from the World Bank Archive:
 ##### 1. The GDP file - includes the list of countries, their yearly GDP (in USD millions) and ranking, based on this GDP; and-
 ##### 2. The education file - includes various information, by country
@@ -97,8 +97,8 @@ q5 <- subset(MergedDataSorted, Ranking > 152 & Ranking <= 190)
 sum(q1$Income.Group == "Lower middle income")
 ```
 
-#### Conclusion
-#### 1. We have found that there are three countries with GDP significantly larger than the rest of the world - USA, China and Japan;
-#### 2. We can see that USA and Japan are in the "High Income: OECD" group, while china is in the "Lower Middle Income" group;
-#### 3. "Low Income" group contains countries with very low GDP, but "High Income Non OECD" group - as well. This is compared to "High Income OECD" and "Upper Middle Income" - these two groups have more variety of GDP in it, including countries with high GDP;
-#### 4. Finally, we can see that out of 38 countries, the upper quantile in terms of GDP ranking, only 5 countries are in the "Lower Middle Income".
+#### Summary and conclusion
+##### 1. We have found that there are three countries with GDP significantly larger than the rest of the world - USA, China and Japan;
+##### 2. We can see that USA and Japan are in the "High Income: OECD" group, while china is in the "Lower Middle Income" group;
+##### 3. "Low Income" group contains countries with very low GDP, but "High Income Non OECD" group - as well. This is compared to "High Income OECD" and "Upper Middle Income" - these two groups have more variety of GDP in it, including countries with high GDP;
+##### 4. Finally, we can see that out of 38 countries, the upper quantile in terms of GDP ranking, only 5 countries are in the "Lower Middle Income".
